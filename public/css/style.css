@@ -1,0 +1,591 @@
+:root {
+  --black: #000001;
+  --black-russian: #00000014;
+  --blue-ribbon: #0F6AFC;
+  --carnation: #FE5060;
+  --malachite: #32F370;
+  --mirage: #1A2235;
+  --dark-blue: #192232;
+  --royal-blue: #3B80EE;
+  --sunglow: #FFD633;
+  --stratos: #00000029;
+  --white: #FFFFFF;
+
+  /*gray shades*/
+  --alto: #DDDDDD; 
+  --athens-gray: #E1E3EC;
+  --dark-gray: #636363;
+  --dove-gray: #666666;
+  --gallery: #EEEEEE;
+  --ghost: #C0C3D0;
+  --gray: #E1E4EC;
+  --mercury: #E5E5E5;
+  --mine-shaft: #333333;
+  --silver: #CCCCCC;
+  --tundora: #464646;
+
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 5% 0;
+}
+
+.column {
+  float: left;
+}
+
+.center-image {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.slant {
+    background-color: var(--mirage);
+    clip-path: polygon(0 0,100% 0,100% 75%,0 85%);
+    height: 645px;
+    position: absolute;
+    vertical-align:middle;
+    width: 100%;
+    -webkit-clip-path: polygon(0 0,100% 0,100% 75%,0 85%);
+    z-index: -2;
+}
+
+.bg-ray {
+  background: transparent linear-gradient(159deg, #999999 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+  height: 300px;
+  opacity: 0.1;
+  position: absolute;
+  transform: skewX(30deg);
+  width: 9%;
+  z-index: -1;
+}
+
+.bg-ray-1 {
+  height: 400px;
+  left: -20px;
+}
+
+.bg-ray-2 {
+  height: 200px;
+  left: 125px;
+  top: 170px;
+}
+
+.bg-ray-3 {
+  right: 230px;
+  width: 12%;
+}
+
+.bg-ray-4 {
+  right: 260px;
+  width: 7%;
+}
+
+.bg-ray-5 {
+  right: 70px;
+}
+
+.bg-ray-6 {
+  right: -45px;
+}
+
+.bg-ray-7 {
+  right: 70px;
+  top: 210px;
+}
+
+/** HEADER PART **/
+.header {
+  color: var(--white);
+  padding: 1% 0;
+}
+
+/** UPPER PART OF HEADER **/
+.top-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 1.5%;
+  margin: 0 15%;
+}
+
+.brand-name {
+  font-size: 1.25em;
+  line-height: 24px;
+  margin: 0 0.5%;
+  vertical-align: super;
+}
+
+.slogan {
+  font-size: 1em;
+  line-height: 19px;
+  vertical-align: super;
+}
+
+.top-nav {
+  float: right;
+  margin-top: 1%;
+}
+
+.header a {
+  color: var(--white);
+  font-size: 0.875em;
+  text-decoration: none;
+}
+
+/** SECOND PART(LOWER) OF HEADER **/
+/** Consists of two columns, where left column is for text and right column is for tab **/
+.bottom-header {
+  padding: 5% 10% 0 15%;
+}
+
+.bottom-header .left {
+  width: 50%;
+}
+
+.bottom-header .left img {
+  padding-bottom: 5%;
+}
+
+.bottom-header .left h1 {
+  font-size: 2.625em;
+  font-weight: 600; 
+  line-height: 1.43em;  
+  padding: 0 5% 5% 0; 
+}
+
+.bottom-header .left p {
+  color: var(--alto); 
+  font-size: 1.125em;  
+  line-height: 1.67em;
+  margin-bottom: 7%;
+  padding: 0 20% 0 0;
+}
+
+.button {
+  background-image: linear-gradient(to top left, var(--blue-ribbon), var(--royal-blue));
+  border-radius: 4px;
+  padding: 1.5% 6% 2% 6%;
+  width: 100%;
+}
+
+.bottom-header .right {
+  width: 50%;
+}
+
+.window {
+  box-shadow: 0px 6px 20px var( --stratos);
+  border-radius: 0 0 5px 5px;
+}
+
+.top-bar {
+  background-color: var(--gallery);
+  border-radius: 5px 5px 0 0;
+  padding: 1.1%;
+}
+
+.dot {
+  border-radius: 50%;
+  display: inline-block;
+  height: 8px;
+  margin: 0.1% 0 0.4% 0.2%;
+  width: 8px;
+}
+
+#close {
+  background-color: var(--carnation);
+}
+
+#resize {
+  background-color: var(--sunglow);
+}
+#minimize {
+  background-color: var(--malachite);
+}
+
+.tab {
+  background-color: var(--white);
+  border-radius: 0 0 5px 5px;
+  padding: 28%;
+}
+
+.tab > img { 
+  margin-left: 17%;
+}
+/** END OF HEADER PART **/
+
+/** FEATURES SECTION **/
+/** Consists of two columns, where left column is for text and right column is for TA Digital logo **/
+.features > h2,
+.our-team > h2,
+.how-it-works > h2 {
+  font-size: 2.125em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.features > h2,
+.our-team > h2 {
+  color: var(--mine-shaft);
+}
+
+.features > p,
+.our-team > p,
+.how-it-works > p {
+  font-size: 1em;
+  line-height: 1.75em;
+  padding: 1% 33%;
+  text-align: center;
+}
+
+.features > p,
+.our-team > p {
+  color: var(--dove-gray);
+}
+
+.features > ul {
+  text-align: center;
+}
+
+.features > ul > li.circle {
+  color: var(--ghost);
+  display: inline-block;
+  font-size: 0.75em;
+  line-height: 2.33em;
+  padding: 1.25% 4.5%;
+}
+
+.features > ul > li.selected {
+  color: var(--mirage);
+}
+
+.circles .selected.circle::before {
+  border-color: var(--royal-blue);
+}
+
+.circles .circle::before {
+  border: 8px solid var(--athens-gray);
+  border-radius: 50%;
+  content: '';
+  display: flex;
+  height: 10px;
+  margin: auto auto 13%;
+  width: 10px;
+}
+
+.features .row {
+  padding: 4% 15% 0 18%;
+}
+
+.features .left {
+  width: 55%;
+}
+
+.features .row .left img {
+  padding: 50px 0 20px 0;
+}
+
+.features .row .left h3::before {
+  background-color: var(--royal-blue);
+  content: '';
+  display: block;
+  height: 19px;
+  position: relative;
+  right: 17px;
+  top: 22px;
+  transform: skew(25deg);
+  width: 5px;
+}
+
+.features .row .left h3 {
+  color: var(--black);
+  font-size: 1.5em;
+  font-weight: 600;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+.features .row .left p {
+  color: var(--mine-shaft);  
+  font-size: 1em;
+  line-height: 1.875em;
+  padding: 0 35% 0 0;
+}
+
+.features .right {
+  width: 45%;
+}
+
+.features .row .right img {
+  background-color: var(--athens-gray);
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px var(--black-russian);
+  padding: 28% 30%;
+}
+/** END OF FEATURES SECTION **/
+
+/** INFORMATION SECTION **/
+/** Consists of two equal width columns, where both columns are for text **/
+.info {
+  background-color: var(--gray);
+}
+
+.info .column {
+  width: 50%;
+}
+
+.info .left p {
+  color: var(--tundora);
+  font-size: 1.5em;
+  line-height: 1.42em;
+  padding: 0 12% 4% 25%;
+}
+
+.info .right p {
+  color: var(--mine-shaft);
+  font-size: 1.125em;
+  line-height: 1.67em;
+  padding: 0 25% 3% 6%;
+}
+/** END OF INFORMATION SECTION **/
+
+/** OUR-TEAM SECTION **/
+.cards-section {
+  display: flex;
+  padding: 2% 15% 0;
+}
+
+.box {
+  background-color: var(--white);
+  border: solid 1px var(--silver);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  width: 265px;
+}
+
+.profile-pic {
+  background-color: var(--athens-gray);
+  border-radius: 5px;
+  color: var(--dark-gray);
+  width:100%
+}
+
+.name {
+  color: var(--mine-shaft);
+  font-size: 1em;
+  font-weight: 600;
+  padding: 5% 0;
+}
+
+.about {
+  color: var(--dove-gray);
+  font-size: 0.8125em;
+  line-height: 1.54em;
+}
+/** END OF OUR-TEAM SECTION **/
+
+/** HOW-IT-WORKs SECTION **/
+/** Consists of two columns, where left column is for TA Digital logo and right column is for text **/
+.how-it-works {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+  padding-top: 7%;
+}
+
+.how-it-works .row {
+  padding-top: 5%;
+}
+
+.how-it-works .row .left {
+  padding-left: 15%;
+  width: 35%;
+}
+
+.how-it-works .row .left img {
+  background-color: var(--white);
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px var(--black-russian);
+  padding: 31% 28%;
+}
+
+.how-it-works .right {
+  width: 50%;
+}
+
+.how-it-works .right h3 {
+  font-size: 2em;
+  font-weight: 600;
+  padding: 0 10% 5% 0;
+}
+
+.how-it-works .right p {
+  font-size: 1.25em;
+  line-height: 1.7em;
+  padding: 0 25% 0 0;
+}
+/** END OF HOW-IT-WORKS SECTION **/
+
+/** QUOTE SECTION **/
+.quote {
+  color: var(--tundora);
+  padding: 5% 10%;
+  text-align: center;
+}
+
+.quote-mark {
+  color: var(--tundora);
+  height: 60px;
+  font-size: 3.125em;
+  font-weight: 900;
+}
+
+.quote blockquote {
+  font-size: 1.5em;
+  line-height: 1.67em;
+  padding: 0 20%;
+}
+/** END OF QUOTE SECTION **/
+
+/** FOOTER **/
+.footer-bar {
+  border-top: 1px solid var(--mercury);
+  margin: 0 15%;
+  padding: 1% 0;
+}
+
+.footer-nav {
+  float: right;
+}
+
+.footer-nav li {
+  display: inline;
+  padding: 0 10px;
+}
+
+.footer-nav a {
+  color: var(--dove-gray);
+  font-size: 0.75em;
+  text-decoration: none;
+}
+/** END OF FOOTER **/
+
+/* On screens that are 1600px or above*/
+@media screen and (min-width: 1600px) {
+  .slant {
+    height: 685px;
+  }
+
+  .window {
+    margin-left: 5%;
+  }
+
+  .tab {
+    padding: 30%;
+  }
+
+  /*FEATURES SECTION*/
+  .features .row {
+    padding-left: 10%;
+  }
+
+  .features .left {
+    width: 45%;
+    padding-left: 10%;
+  }
+
+  .features .row .left img {
+    padding-top: 50px;
+  }
+
+  .features .row .left h3::before {
+    top: 40px;
+    right: 15px;
+  }
+  
+  .features .row .left h3 {
+    line-height: 60px;
+    text-align: left;
+  }
+  
+  .features .row .left p {
+    padding-bottom: 5%;
+    padding-right: 30%;
+    line-height: 30px;
+  }
+  
+  .features .row .right img {
+    padding: 25% 30%; 
+}
+  
+  .features > h2,
+  .our-team > h2,
+  .how-it-works > h2 {
+    line-height: 60px;
+  }
+  
+  .features > p,
+  .our-team > p,
+  .how-it-works > p {
+    padding: 1% 30%;
+    line-height: 28px;
+  }
+    
+  /*INFORMATION SECTION*/
+  .info .left p {
+    padding: 0 15% 5% 25%;
+    line-height: 34px;
+  }
+  
+  .info .right p {
+    padding: 0 30% 3.5% 5%;
+    line-height: 30px;
+  }
+  
+  /*OUR_TEAM SECTION*/
+  .cards-section {
+    display: flex;
+    padding: 2% 15% 0 15%;
+  }
+  
+  .name {
+    line-height: 24px;
+    padding: 2% 0;
+  }
+  
+  .about {
+    line-height: 20px;
+  }
+  
+  /*HOW-IT-WORKs SECTION*/
+  .how-it-works .row .left img {
+    padding: 30%;
+  }
+
+  .how-it-works .right {
+    margin: 0;
+  }
+  
+  .how-it-works .right h3 {
+    line-height: 60px;
+    padding: 0 10% 2% 5%;
+  }
+  
+  .how-it-works .right p {
+    padding: 0 26% 0 5%;
+    line-height: 34px;
+  }
+}
